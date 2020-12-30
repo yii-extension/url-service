@@ -27,11 +27,13 @@ declare(strict_types=1);
 
 namespace App\Action;
 
+use Psr\Http\Message\ResponseInterface;
 use Yii\Extension\Service\ServiceUrl;
 
 final class Example
 {
-    public function run(ServiceUrl $serviceUrl): ResponseInterface {
+    public function run(ServiceUrl $serviceUrl): ResponseInterface
+    {
         // redirect to `site/index`
         return $serviceUrl->run('site/index');
     }
