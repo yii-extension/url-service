@@ -42,10 +42,10 @@ final class Example
 
 ### Static analysis
 
-The code is statically analyzed with [Phan](https://github.com/phan/phan/wiki). To run static analysis:
+The code is statically analyzed with [Psalm](https://psalm.dev/docs). To run static analysis:
 
-```shell
-./vendor/bin/phan
+```php
+./vendor/bin/psalm
 ```
 
 ### License
